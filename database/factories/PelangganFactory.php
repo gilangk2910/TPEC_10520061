@@ -19,7 +19,7 @@ class PelangganFactory extends Factory
         return [
             'nama_lengkap' => $this->faker->firstNameMale,
             'jenis_kelamin' => $this->faker->randomElement(['Laki-Laki', 'Perempuan']),
-            'nomor_hp' => $this->faker->phoneNumber,
+            'nomor_hp' => $this->faker->e164PhoneNumber,
             'alamat' => $this->faker->address,
             'email' => $this->faker->unique()->safeEmail,
         ];
